@@ -17,6 +17,7 @@
 #
 
 if [ -f z2/system/etc/loki.sh ];then
+	mkdirp out/system/etc 2> /dev/null
 	cp z2/system/etc/loki.sh out/system/etc
 	rm z2/system/etc/loki.sh
 fi
